@@ -211,7 +211,9 @@ window.location.reload();
 }
 </script>
 
-
+<audio id='8' controls style='display:none'>
+  <source src='sounds/8.mp3' type='audio/mpeg'> Your browser does not support the audio element.
+</audio>
 <audio id='96' controls style='display:none'>
   <source src='sounds/96.mp3' type='audio/mpeg'> Your browser does not support the audio element.
 </audio>
@@ -272,6 +274,11 @@ window.location.reload();
 
 
 <script type="text/javascript">
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 8) {
+    document.getElementById('8').play();
+  }
+});  
 document.addEventListener('keydown', function(e) {
   if (e.keyCode == 96) {
     document.getElementById('96').play();
