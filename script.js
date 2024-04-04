@@ -305,7 +305,7 @@ restoreData();
       let textvi = calcHistory[i].out.toString();
       textiv="1248.64";
 	  console.log(textvi);
-	  testi=".Equals,,,,"+textvi+",,,,I Repeat.,,,,"+textvi;
+	  testi="Equals,,,,"+textvi+",,,,I Repeat.,,,,"+textvi;
 	  console.log(testi);
 	   // responsiveVoice.speak(textvi,'UK English Female', parameters);  
        // responsiveVoice.speak("    I Repeat.    ",'UK English Female', parameters);  
