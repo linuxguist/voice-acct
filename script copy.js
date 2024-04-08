@@ -299,7 +299,7 @@ restoreData();
     calcHistory.push({out: out, expression: expression, tokens: tokens});
     // $("#calc-history-box").html("");
     for(var i = calcHistory.length - 1; i >= 0; i--) {
-      $("#calc-history-box").prepend("<u><p style='text-align: left;color: khaki;margin-bottom: 10px;'>" + moment().format('llll') + "</p></u>" + "<p style='color: lemonchiffon; ' class='calc-history-eq' id='eq" + i + "'>" + calcHistory[i].expression + "</p><p style='text-align: right; margin-top: -10px;'>= " + calcHistory[i].out + "</p>");
+      $("#calc-history-box").prepend("<p style='color: lemonchiffon; ' class='calc-history-eq' id='eq" + i + "'>" + calcHistory[i].expression + "</p><p style='text-align: right; margin-top: -10px;'>= " + calcHistory[i].out + "</p>");
       
       textii = calcHistory[i].out;
       let textvi = calcHistory[i].out.toString();
