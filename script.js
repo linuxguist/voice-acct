@@ -167,7 +167,7 @@ restoreData();
   ];
   
   // The number of places to round to
-  const roundPlaces = 15;
+  const roundPlaces = 2;
   
   // Get the operator object for a given operator ID
   function getOperator(opID) {
